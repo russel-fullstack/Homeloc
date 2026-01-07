@@ -5,64 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeLoc</title>
     <link rel="stylesheet" href="./src/output.css">
+    
 </head>
 <body>
                    <!-- Head  -->
-    <header class="flex justify-between items-center py-5 px-6 shadow shadow-gray-400 sticky top-0 z-50 bg-white lg:py-7">
-        <p class="font-bold"><span class="text-[1em] text-purple-900">HOME</span><span class="text-[1em] text-amber-600">LOC</span></p>
+    <header class="w-full flex justify-between px-4 py-5 items-center shadow-md sticky top-0 bg-white z-10 lg:px-15 lg:py-7">
+        <p class="font-bold flex items-center"><span class="text-[12px] md:text-[20px] lg:text-2xl text-purple-900">HOME</span><span class="text-[12px] md:text-[20px] lg:text-2xl text-amber-600">LOC</span></p>
         <nav>
-            <ul class="flex gap-5 items-center ">
+            <ul class="flex gap-px items-center text-[9px] md:text-[15px] md:gap-4 lg:text-xl lg:gap-6 xl:gap-6 xl:text-xl">
                 <li><a href="#" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Home</a></li>
                 <li><a href="#about" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">À propos</a></li>
                 <li><a href="#service" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Services</a></li>
                 <li><a href="#location" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Locations</a></li>
             </ul>
         </nav>
-        <button class="bg-purple-900"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32">
+        <button class="bg-purple-900"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" class="h-6 w-6 md:h-10 md:w-10 xl:h-12 xl:w-12">
             <path fill="white"
                 d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z" />
         </svg></button>
     </header>
 
 
-<main class="px-6"> 
+ <main class="px-6"> 
         
                   <!-- HOME  -->
-    <section class="h-80 p-10 rounded-3xl mt-5 md:p-16 md:h-120 xl:h-130 lg:mx-15" style="background: url(./img-Homeloc/home.jpg) center/cover;">
-        <p class="text-[30px] md:text-[50px] lg:text-[50px] xl:text-[50px] font-bold text-white pt-3">Villas d'Évasion</p>
-        <h1 class="text-[30px] md:text-[50px] lg:text-[50px] xl:text-[50px] font-bold text-white ">Votre Portail Vers Le Luxe Abordable</h1>
-        <button class="text-white p-4 lg:px-8 bg-purple-800 mt-5 rounded-2xl mb-2 hover:bg-purple-900 cursor-pointer">Inscrivez-vous</button>
-        <div class="flex">
-            <img src="./img-Homeloc/apple.png" alt="" class="h-10 lg:h-25">
-            <img src="./img-Homeloc/google.png" alt="" class="h-10 lg:h-25">
+    <section class="h-40 p-4 rounded-xl mt-5 md:p-10 md:h-100 xl:h-120 lg:mx-8 lg:h-110  lg:p-15 " style="background: url(./img-Homeloc/home.jpg) center/cover;">
+        <p class="text-[13px] md:text-[40px] lg:text-[43px] xl:text-[45px] font-bold text-white pt-3">Villas d'Évasion,</p>
+        <h1 class="text-[13px] md:text-[40px] lg:text-[43px] xl:text-[43px] font-bold text-white ">Votre Portail Vers Le Luxe Abordable.</h1>
+        <button class="text-white px-2 py-1 rounded-sm text-[8px] md:text-[16px] md:px-4 md:py-2 md:rounded-lg lg:px-8 bg-purple-800 mt-5 lg:rounded-2xl lg:py-3 mb-2 lg:text-xl xl:text-[22px] xl:py-4 xl:px-8  hover:bg-purple-900 cursor-pointer">Inscrivez-vous</button>
+        <div class="flex pt-1">
+            <img src="./img-Homeloc/apple.png" alt="" class="h-7 md:h-15 lg:h-25 xl:h-30">
+            <img src="./img-Homeloc/google.png" alt="" class="h-7 md:h-15  lg:h-25 xl:h-30">
         </div>
     </section>
 
                    <!-- À Propos de Nous -->
-    <section id="about" class="flex justify-around gap-5 lg:px-15 mt-7 lg:mt-12">
-        <div style="background: url(./img-Homeloc/about.jpg) center/cover;" class="h-90 w-200 rounded-2xl rounded-br-none mb-3 lg:rounded-[4em] lg:rounded-br-none"></div>
-        <div>
-            <p class="text-amber-500 text-lg lg:text-2xl">À propos de Nous</p>
-            <p class="text-2xl lg:text-3xl text-slate-900 font-bold py-2 lg:py-4" style="font-family: 'Times New Roman', Times, serif;">Notre Engagement Envers l'Excellence</p>
-            <p class="text-sm lg:text-[1.25rem]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="py-2 text-sm lg:text-xl lg:py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia dolor consequatur totam similique cumque.</p>
-            <p class=" text-sm lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="bg-purple-800 py-2 px-3 mt-3 lg:mt-5 rounded-md text-white hover:bg-purple-900 cursor-pointer">En Savoir Plus</button>
+    <section id="about" class="flex justify-between gap-3 lg:px-10 mt-5 lg:mt-9 xl:mt:9 xl:gap-8 lg:gap-6">
+        <div style="background: url(./img-Homeloc/about.jpg) center/cover;" class="h-40 w-1/2 md:h-70 lg:h-90 xl:h-100 xl:w-1/2 lg:w-3/4 rounded-2xl rounded-br-none mb-3 lg:rounded-[2em] lg:rounded-br-none xl:rounded-[3em]"></div>
+        <div class="w-1/2">
+            <p class="text-amber-600 underline font-bold text-[10px] md:mt-3 xl:mt-5 md:text-lg lg:text-[22px] xl:text-[25px]">À propos de Nous</p>
+            <p class="text-[10px] md:text-xl md:py-4 lg:text-2xl xl:text-3xl text-slate-900 font-bold py-1 lg:py-2 xl:py-4" style="font-family: 'Times New Roman', Times, serif;">Notre Engagement Envers l'Excellence</p>
+            <p class="text-[5px] md:text-[13px] lg:text-[15px] xl:text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="py-2 text-[5px] md:text-[13px] lg:text-[15px] lg:py-2 xl:text-xl xl:py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia dolor consequatur totam similique cumque.</p>
+            <p class=" text-[5px] md:text-[13px] lg:text-[15px] xl:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <button class="bg-purple-800 text-[5px] md:text-sm lg:text-lg py-2 px-3 mt-3 lg:mt-5  rounded-md text-white hover:bg-purple-900 cursor-pointer">En Savoir Plus</button>
         </div>
     </section>
 
               <!-- Comment ça fonctionne  -->
     <section id="service" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 justify-between items-center mt-20 px-15 gap-8 mb-10">
-        <div  class="text-center px-8 py-15 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
+        <div  class=" xl:px-8 xl:py-18 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ;">
             <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512" width="88" height="88" style="color: rgb(98, 36, 156);padding: 20px; border-radius: 50%; background-color: whitesmoke">
                 <path fill="currentColor" 
                     d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-            </svg><br>
-            <span class="font-bold text-[20px]" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
-            <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
+            </svg>
+            <div>
+                <span class="font-bold text-[20px]" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
+                <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
+            </div>
         </div>
-        <div class="text-center px-8 py-15 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
+        <div class="text-center xl:px-8 xl:py-15 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ;">
             <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512" width="88" height="88" style="color: rgb(98, 36, 156); padding: 20px; border-radius: 50%; background-color: whitesmoke">
                 <path fill="currentColor" 
@@ -71,7 +74,7 @@
             <span class="font-bold text-[20px]" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
             <p class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
         </div>
-        <div class="text-center px-8 py-15 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
+        <div class="text-center xl:px-8 xl:py-15 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
             <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512" width="88" height="88" style="color: rgb(98, 36, 156); padding: 20px; border-radius: 50%; background-color: whitesmoke">
                 <path fill="currentColor" 
@@ -84,7 +87,7 @@
     
            <!-- Locations  -->
 
-    <span class="text-amber-500 text-2xl flex justify-center">Nos Services</span>
+    <!-- <span class="text-amber-500 text-2xl flex justify-center">Nos Services</span>
     <p class="text-4xl text-slate-800 font-bold text-center py-4" style="font-family: 'Times New Roman', Times, serif;">
         Découvrez Les Meilleures Offres</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-15 py-10 mb-10">
@@ -174,10 +177,10 @@
             </div>
         </div>
         
-    </div>
+    </div> -->
 
                    <!-- Login  -->
-<div class="text-center mb-5 relative">
+<!-- <div class="text-center mb-5 relative">
     <p class="text-2xl  pb-3" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Ne Ratez Pas Les Bons Plans</p>
     <input type="text" placeholder="Indiquez votre e-mail" class="border border-gray-400 shadow shadow-gray-400 rounded-4xl pr-45 pl-10 py-4 lg:pr-100">
     <button class="absolute right-15 lg:right-90  bg-purple-800 py-2 px-6 rounded-4xl text-white bottom-2 hover:bg-purple-900 cursor-pointer font-bold">S'inscrire</button>
@@ -234,7 +237,7 @@
 </footer>
 <div class="text-center font-bold p-2.5 text-[10px] lg:text[20px]">
     <P>&copy;2025 - evarosto - Tous droits réservés</P>
-</div>
+</div> --> 
 </body>
 </html>
 

@@ -1,2 +1,9 @@
 @import "tailwindcss";
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+
+@layer components {
+    .flex-centered{ 
+       justify-content: center;
+       align-items: center;
+    }
+}
