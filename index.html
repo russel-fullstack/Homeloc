@@ -1,269 +1,736 @@
 <!DOCTYPE html>
-<html lang="en"  style="scroll-behavior: smooth;">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeLoc</title>
-    <link rel="stylesheet" href="./src/output.css">
-    
-</head>
-<body>
-                   <!-- Head  -->
-    <header class="w-full flex justify-between px-4 py-5 items-center shadow-md sticky top-0 bg-white z-10 lg:px-9 lg:py-3">
-        <p class="font-bold flex items-center"><span class="text-[12px] md:text-base lg:text-lg text-purple-900">HOME</span><span class="text-[12px] md:text-base lg:text-lg text-amber-600">LOC</span></p>
-        <nav>
-            <ul class="flex gap-px items-center text-[9px] md:text-[12px] md:gap-4 lg:text-base lg:gap-6 xl:gap-6 xl:text-base">
-                <li><a href="#" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Home</a></li>
-                <li><a href="#about" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">À propos</a></li>
-                <li><a href="#service" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Services</a></li>
-                <li><a href="#location" class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm">Locations</a></li>
-            </ul>
-        </nav>
-        <button class="bg-purple-900"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" class="h-6 w-6 md:h-10 md:w-10 xl:h-12 xl:w-12">
-            <path fill="white"
-                d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z" />
-        </svg></button>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <!-- Head  -->
+    <header
+      class="w-full flex justify-between px-4 py-5 items-center shadow-md sticky top-0 bg-white z-10 lg:px-9 lg:py-3"
+    >
+      <p class="font-bold flex items-center">
+        <span class="text-[12px] md:text-base lg:text-lg text-purple-900"
+          >HOME</span
+        ><span class="text-[12px] md:text-base lg:text-lg text-amber-600"
+          >LOC</span
+        >
+      </p>
+      <nav>
+        <ul
+          class="flex gap-px items-center text-[9px] md:text-[12px] md:gap-4 lg:text-base lg:gap-6 xl:gap-6 xl:text-base"
+        >
+          <li>
+            <a
+              href="#"
+              class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#service"
+              class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#location"
+              class="text-purple-800 p-2 font-bold hover:bg-purple-800 hover:text-white rounded-sm"
+              >Locations</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="bg-purple-900">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 96 960 960"
+          width="24"
+          class="h-6 w-6 md:h-10 md:w-10 xl:h-12 xl:w-12"
+        >
+          <path
+            fill="white"
+            d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"
+          />
+        </svg>
+      </button>
     </header>
 
+    <main class="px-6">
+      <!-- HOME  -->
+      <section
+        class="h-80 p-4 rounded-xl mt-5 md:p-10 md:h-100 xl:h-120 lg:mx-8 lg:h-110 lg:p-15"
+        style="background: url(./img-Homeloc/home.jpg) center/cover"
+      >
+        <div
+          class="flex flex-col justify-center items-center md:justify-start md:items-start py-5"
+        >
+          <p
+            class="text-3xl md:text-[40px] lg:text-[43px] xl:text-[45px] font-bold text-white pt-3"
+          >
+            Villas d'Évasion,
+          </p>
+          <p
+            class="text-3xl text-center sm:text-start md:text-[40px] lg:text-[43px] xl:text-[43px] font-bold text-white pb-3"
+          >
+            Votre Portail Vers Le Luxe Abordable.
+          </p>
+          <button
+            title="Inscrivez-vous"
+            class="text-white px-3 py-2 rounded-lg text-lg md:text-[16px] md:px-4 md:py-2 md:rounded-lg lg:px-8 bg-purple-800 mt-5 lg:rounded-2xl lg:py-2 mb-2 lg:text-xl xl:text-[22px] xl:py-3 xl:px-6 hover:bg-purple-900 cursor-pointer"
+          >
+            Inscrivez-vous
+          </button>
+          <div class="flex pt-1">
+            <img
+              src="./img-Homeloc/apple.png"
+              alt=""
+              class="h-15 md:h-15 lg:h-25 xl:h-30"
+            />
+            <img
+              src="./img-Homeloc/google.png"
+              alt=""
+              class="h-15 md:h-15 lg:h-25 xl:h-30"
+            />
+          </div>
+        </div>
+      </section>
 
- <main class="px-6"> 
-        
-                  <!-- HOME  -->
-    <section class="h-80 p-4 rounded-xl mt-5 md:p-10 md:h-100 xl:h-120 lg:mx-8 lg:h-110  lg:p-15 " style="background: url(./img-Homeloc/home.jpg) center/cover;">
-        <div class="flex flex-col justify-center items-center md:justify-start md:items-start py-5">
-            <p class="text-3xl md:text-[40px] lg:text-[43px] xl:text-[45px] font-bold text-white pt-3">Villas d'Évasion,</p>
-            <p class="text-3xl text-center sm:text-start md:text-[40px] lg:text-[43px] xl:text-[43px] font-bold text-white pb-3">Votre Portail Vers Le Luxe Abordable.</p>
-            <button class="text-white px-3 py-2 rounded-lg text-lg md:text-[16px] md:px-4 md:py-2 md:rounded-lg lg:px-8 bg-purple-800 mt-5 lg:rounded-2xl lg:py-2 mb-2 lg:text-xl xl:text-[22px] xl:py-3 xl:px-6  hover:bg-purple-900 cursor-pointer">Inscrivez-vous</button>
-            <div class="flex pt-1">
-                <img src="./img-Homeloc/apple.png" alt="" class="h-15 md:h-15 lg:h-25 xl:h-30">
-                <img src="./img-Homeloc/google.png" alt="" class="h-15 md:h-15  lg:h-25 xl:h-30">
-            </div>
+      <!-- À Propos de Nous -->
+      <section
+        class="flex flex-col justify-center items-center sm:flex-row sm:justify-between sm:items-start gap-3 lg:px-10 mt-5 lg:mt-9 xl:mt:9 xl:gap-8 lg:gap-6"
+      >
+        <div
+          style="background: url(./img-Homeloc/about.jpg) center/cover"
+          id="about"
+          class="h-50 w-full sm:w-1/2 md:h-70 lg:h-90 xl:h-100 xl:w-1/2 lg:w-3/4 rounded-2xl rounded-br-none mb-3 lg:rounded-[2em] lg:rounded-br-none xl:rounded-[3em]"
+        ></div>
+        <div class="w-full text-center sd:w-1/2 sd:text-start">
+          <p
+            class="text-amber-600 text-lg underline underline-offset-2 font-bold md:mt-3 xl:mt-5 md:text-xl lg:text-[22px] xl:text-[25px]"
+          >
+            À propos de Nous
+          </p>
+          <p
+            class="text-base md:text-xl md:py-4 lg:text-2xl xl:text-3xl text-slate-900 font-bold py-1 lg:py-2 xl:py-4"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Notre Engagement Envers l'Excellence
+          </p>
+          <p class="text-xs md:text-[14px] lg:text-lg xl:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+          <p
+            class="py-2 text-xs md:text-[14px] lg:text-lg lg:py-2 xl:text-xl xl:py-4"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            mollitia dolor consequatur totam similique cumque.
+          </p>
+          <p class="text-xs md:text-[13px] lg:text-[15px] xl:text-lg">
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
+          </p>
+          <button
+            class="bg-purple-800 text-base md:text-base lg:text-lg py-3 px-5 mt-3 lg:mt-5 rounded-xl text-white hover:bg-purple-900 cursor-pointer"
+          >
+            En Savoir Plus
+          </button>
         </div>
-    </section>
+      </section>
 
-                   <!-- À Propos de Nous -->  
-    <section  class="flex  flex-col justify-center items-center sm:flex-row sm:justify-between sm:items-start gap-3 lg:px-10 mt-5 lg:mt-9 xl:mt:9 xl:gap-8 lg:gap-6">
-        <div style="background: url(./img-Homeloc/about.jpg) center/cover;"id="about" class="h-50 w-full sm:w-1/2 md:h-70 lg:h-90 xl:h-100 xl:w-1/2 lg:w-3/4 rounded-2xl rounded-br-none mb-3 lg:rounded-[2em] lg:rounded-br-none xl:rounded-[3em]"></div>
-        <div class=" w-full text-center sd:w-1/2 sd:text-start ">
-            <p class="text-amber-600 text-lg underline underline-offset-2 font-bold  md:mt-3 xl:mt-5 md:text-xl lg:text-[22px] xl:text-[25px]">À propos de Nous</p>
-            <p class="text-base md:text-xl md:py-4 lg:text-2xl xl:text-3xl text-slate-900 font-bold py-1 lg:py-2 xl:py-4" style="font-family: 'Times New Roman', Times, serif;">Notre Engagement Envers l'Excellence</p>
-            <p class="text-xs md:text-[14px] lg:text-lg xl:text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="py-2 text-xs md:text-[14px] lg:text-lg lg:py-2 xl:text-xl xl:py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia dolor consequatur totam similique cumque.</p>
-            <p class=" text-xs md:text-[13px] lg:text-[15px] xl:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="bg-purple-800 text-base md:text-base lg:text-lg py-3 px-5 mt-3 lg:mt-5  rounded-xl text-white hover:bg-purple-900 cursor-pointer ">En Savoir Plus</button>
+      <!-- Comment ça fonctionne  -->
+      <h2
+        class="text-center mt-5 py-3 md:py-5 lg:py-8 sm:mt-7 font-bold text-lg md:text-3xl lg:text-4xl lg:mt-8 text-purple-800 underline underline-offset-2"
+        style="font-family: 'Times New Roman', Times, serif"
+      >
+        Comment ça marche ??
+      </h2>
+      <section
+        class="grid grid-cols-1 mx-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 justify-between items-center mt-7 px-2 gap-8 mb-10"
+      >
+        <div
+          id="service"
+          class="text-center xl:px-8 xl:py-12 border rounded-4xl"
+          style="
+            box-shadow: 0 0 10px 0 rgb(133, 131, 131);
+            border-color: rgb(133, 131, 131);
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="mt-3 mb-4 h-20 w-20"
+            style="
+              color: rgb(98, 36, 156);
+              padding: 20px;
+              border-radius: 50%;
+              background-color: whitesmoke;
+              display: inline-block;
+            "
+          >
+            <path
+              fill="currentColor"
+              d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
+            /></svg
+          ><br />
+          <div>
+            <span
+              class="font-bold text-[14px] xl:text-2xl"
+              style="
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              "
+              >Lorem ipsum dolor sit.</span
+            >
+            <p class="p-4 text-sm xl:text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+              dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea
+              similique?
+            </p>
+          </div>
         </div>
-    </section>
+        <div
+          class="text-center xl:px-8 xl:py-12 border rounded-4xl"
+          style="
+            box-shadow: 0 0 10px 0 rgb(133, 131, 131);
+            border-color: rgb(133, 131, 131);
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="mt-3 mb-4 h-20 w-20"
+            style="
+              color: rgb(98, 36, 156);
+              padding: 20px;
+              border-radius: 50%;
+              background-color: whitesmoke;
+              display: inline-block;
+            "
+          >
+            <path
+              fill="currentColor"
+              d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
+            /></svg
+          ><br />
+          <span
+            class="font-bold text-[15px] xl:text-2xl"
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+            >Lorem ipsum dolor sit.</span
+          >
+          <p class="p-4 text-sm xl:text-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor
+            incidunt ratione quibusdam quod rem repudiandae amet enim ea
+            similique?
+          </p>
+        </div>
+        <div
+          class="text-center xl:px-8 xl:py-12 border rounded-4xl"
+          style="
+            box-shadow: 0 0 10px 0 rgb(133, 131, 131);
+            border-color: rgb(133, 131, 131);
+            text-align: center;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="mt-3 mb-4 h-20 w-20"
+            style="
+              color: rgb(98, 36, 156);
+              padding: 20px;
+              border-radius: 50%;
+              background-color: whitesmoke;
+              display: inline-block;
+            "
+          >
+            <path
+              fill="currentColor"
+              d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
+            /></svg
+          ><br />
+          <span
+            class="font-bold text-[15px] xl:text-2xl"
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+            >Lorem ipsum dolor sit.</span
+          >
+          <p class="p-4 text-sm xl:text-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor
+            incidunt ratione quibusdam quod rem repudiandae amet enim ea
+            similique?
+          </p>
+        </div>
+        <div
+          class="text-center xl:px-8 xl:py-12 border rounded-4xl lg:hidden"
+          style="
+            box-shadow: 0 0 10px 0 rgb(133, 131, 131);
+            border-color: rgb(133, 131, 131);
+            text-align: center;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="mt-3 mb-4 h-20 w-20"
+            style="
+              color: rgb(98, 36, 156);
+              padding: 20px;
+              border-radius: 50%;
+              background-color: whitesmoke;
+              display: inline-block;
+            "
+          >
+            <path
+              fill="currentColor"
+              d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
+            /></svg
+          ><br />
+          <span
+            class="font-bold text-[15px] md:text-xl"
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+            >Lorem ipsum dolor sit.</span
+          >
+          <p class="p-4 text-sm">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor
+            incidunt ratione quibusdam quod rem repudiandae amet enim ea
+            similique?
+          </p>
+        </div>
+      </section>
 
-              <!-- Comment ça fonctionne  -->
-    <h2 class="text-center mt-5 py-3 md:py-5 lg:py-8 sm:mt-7 font-bold text-lg md:text-3xl lg:text-4xl  lg:mt-8  text-purple-800 underline underline-offset-2" style="font-family: 'Times New Roman', Times, serif;">Comment ça marche ??</h2>
-    <section class="grid grid-cols-1 mx-6  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 justify-between items-center mt-7 px-2  gap-8 mb-10">
-        <div  id="service"  class="text-center xl:px-8 xl:py-12 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ;">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" class="mt-3 mb-4 h-20 w-20 " style="color: rgb(98, 36, 156);padding: 20px; border-radius: 50%; background-color: whitesmoke; display: inline-block;">
-                <path fill="currentColor" 
-                    d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-            </svg><br>
-            <div>
-                <span class="font-bold text-[14px] xl:text-2xl " style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
-                <p class="p-4 text-sm xl:text-lg ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
-            </div>
-        </div>
-        <div class="text-center xl:px-8 xl:py-12 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ;">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"class="mt-3 mb-4 h-20 w-20" style="color: rgb(98, 36, 156); padding: 20px; border-radius: 50%; background-color: whitesmoke; display: inline-block;">
-                <path fill="currentColor" 
-                    d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-            </svg><br>
-            <span class="font-bold text-[15px] xl:text-2xl " style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
-            <p class="p-4 text-sm xl:text-lg ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
-        </div>
-        <div class="text-center xl:px-8 xl:py-12 border rounded-4xl" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" class="mt-3 mb-4 h-20 w-20" style="color: rgb(98, 36, 156); padding: 20px; border-radius: 50%; background-color: whitesmoke; display: inline-block; ">
-                <path fill="currentColor" 
-                    d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-            </svg><br>
-            <span class="font-bold text-[15px] xl:text-2xl " style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
-            <p class="p-4 text-sm xl:text-lg ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
-        </div>
-        <div class="text-center xl:px-8 xl:py-12 border rounded-4xl lg:hidden" style="box-shadow: 0 0 10px 0 rgb(133, 131, 131); border-color:rgb(133, 131, 131) ; text-align: center;">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" class="mt-3 mb-4 h-20 w-20" style="color: rgb(98, 36, 156); padding: 20px; border-radius: 50%; background-color: whitesmoke; display: inline-block; ">
-                <path fill="currentColor" 
-                    d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
-            </svg><br>
-            <span class="font-bold text-[15px] md:text-xl " style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit.</span>
-            <p class="p-4 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolor incidunt ratione quibusdam quod rem repudiandae amet enim ea similique?</p>
-        </div>
-    </section>
-    
-           <!-- Locations  -->
+      <!-- Locations  -->
 
-     <span class="text-amber-600 font-bold underline underline-offset-2 text-xl md:text-2xl flex justify-center">Nos Services</span>
-    <p class="text-2xl md:text-4xl text-slate-800 font-bold text-center py-4" style="font-family: 'Times New Roman', Times, serif;">
-        Découvrez Les Meilleures Offres</p>
-    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 py-10 mb-10">
-        <div id="location" class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-150 hover:scale-110 cursor-pointer ">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p1.jpg" alt="" height="200px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                    <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                    <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                
-                    <button class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer" style="margin-left: 35%; margin-bottom: 30px;" >Louer Maintenant</button>
-            </div>
-        </div>
-        <div class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-150 hover:scale-110 cursor-pointer">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p2.jpg" alt="" height="250px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                <button
-                    class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
-                    style="margin-left: 35%; margin-bottom: 30px;">Louer Maintenant
-                </button>
-            </div>
-        </div>
-        <div class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-150 hover:scale-110 cursor-pointer">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p3.jpg" alt="" height="250px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                <button
-                    class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
-                    style="margin-left: 35%; margin-bottom: 30px;">Louer Maintenant
-                </button>
-            </div>
-        </div>
-        <div class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-150 hover:scale-110 cursor-pointer">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p4.jpg" alt="" height="250px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                <button
-                    class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
-                    style="margin-left: 35%; margin-bottom: 30px;">Louer Maintenant</button>
-            </div>
-        </div>
-        <div class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-150 hover:scale-110 cursor-pointer">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p5.jpg" alt="" height="250px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                <button
-                    class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
-                    style="margin-left: 35%; margin-bottom: 30px;">Louer Maintenant</button>
-            </div>
-        </div>
-        <div class="border border-gray-400 shadow shadow-gray-400
-        rounded-[10px] duration-200 hover:scale-110 cursor-pointer">
-            <div class="p-2 rounded-xl">
-                <img src="./img-Homeloc/p6.jpg" alt="" height="450px" class="rounded-2xl">
-            </div>
-            <div class="pl-2.5">
-                <p style="padding-left: 60%;" class="font-bold sm:text-sm md:text-xl">600€/mois</p>
-                <p class="font-bold text-lg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Palace Room</p>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-bottom: 20px;">Seville,Espagne</p>
-                <button
-                    class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
-                    style="margin-left: 35%; margin-bottom: 30px;">Louer Maintenant</button>
-            </div>
-        </div>
-        
-    </div> 
+      <span
+        class="text-amber-600 font-bold underline underline-offset-2 text-xl md:text-2xl flex justify-center"
+        >Nos Services</span
+      >
+      <p
+        class="text-2xl md:text-4xl text-slate-800 font-bold text-center py-4"
+        style="font-family: 'Times New Roman', Times, serif"
+      >
+        Découvrez Les Meilleures Offres
+      </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 py-10 mb-10"
+      >
+        <div
+          id="location"
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-150 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p1.jpg"
+              alt=""
+              height="200px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
 
-                   <!-- Login  -->
- <div class="flex flex-col items-center justify-center mb-5 ">
-    <p class="text-xs md:text-lg lg:text-xl xl:text-3xl  pb-3" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Ne Ratez Pas Les Bons Plans</p>
-    <form class=" flex gap-10  border border-gray-400 shadow px-6 py-3 
-    sd:px-8 sd:py-2 md:px-10 md:py-2 lg:px-20 
-     xl:px-20 xl:py-2  shadow-gray-400 rounded-4xl">
-        <input type="text" placeholder="Indiquez votre e-mail" class="text-sm sd:text-xs md:text-lg lg:text-lg xl:text-xl lg:pl-5 lg:pr-12 lg:py-4 opacity-50 rounded-3xl"/>
-        <button class=" bg-purple-800 text-[8px] sd:text-xs md:text-xs lg:text-2xs xl:text-lg  lg:px-6 py-2 px-4 rounded-4xl text-white hover:bg-purple-900 cursor-pointer font-bold">S'inscrire</button>
-    </form>
-</div>
-</main>
-<footer class="flex flex-col pl-10 justify-around items-start sd:pl-0 sd:flex-row sd:justify-around sd:items-center gap-5 py-10 bg-purple-800 sd:rounded-[60px] sd:rounded-bl-none sd:rounded-br-none">
-    <div>
-    <p class="font-bold"><span class="text-[1.2em] text-white lg:text-2xl">HOME</span><span class="text-[1.2em] text-amber-400 lg:text-2xl">LOC</span></p>
-    </div>
-    <div>
-        <p class="text-base text-white pb-3 lg:text-[25px] lg:pb-5">Informations</p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-150 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p2.jpg"
+              alt=""
+              height="250px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-150 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p3.jpg"
+              alt=""
+              height="250px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-150 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p4.jpg"
+              alt=""
+              height="250px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-150 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p5.jpg"
+              alt=""
+              height="250px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 shadow shadow-gray-400 rounded-[10px] duration-200 hover:scale-110 cursor-pointer"
+        >
+          <div class="p-2 rounded-xl">
+            <img
+              src="./img-Homeloc/p6.jpg"
+              alt=""
+              height="450px"
+              class="rounded-2xl"
+            />
+          </div>
+          <div class="pl-2.5">
+            <p
+              style="padding-left: 60%"
+              class="font-bold sm:text-sm md:text-xl"
+            >
+              600€/mois
+            </p>
+            <p
+              class="font-bold text-lg"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Palace Room
+            </p>
+            <p
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                padding-bottom: 20px;
+              "
+            >
+              Seville,Espagne
+            </p>
+            <button
+              title="Louer maintenant"
+              class="bg-purple-800 text-white py-2 px-4 rounded-2xl border border-purple-800 hover:bg-white hover:text-purple-800 cursor-pointer"
+              style="margin-left: 35%; margin-bottom: 30px"
+            >
+              Louer Maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login  -->
+      <div class="flex flex-col items-center justify-center mb-5">
+        <p
+          class="text-xs md:text-lg lg:text-xl xl:text-3xl pb-3"
+          style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+          "
+        >
+          Ne Ratez Pas Les Bons Plans
+        </p>
+        <form
+          class="flex gap-10 border border-gray-400 shadow px-6 py-3 sd:px-8 sd:py-2 md:px-10 md:py-2 lg:px-20 xl:px-20 xl:py-2 shadow-gray-400 rounded-4xl"
+        >
+          <input
+            type="text"
+            placeholder="Indiquez votre e-mail"
+            class="text-sm sd:text-xs md:text-lg lg:text-lg xl:text-xl lg:pl-5 lg:pr-12 lg:py-4 opacity-50 rounded-3xl"
+          />
+          <button
+            title="S'inscrire"
+            class="bg-purple-800 text-[8px] sd:text-xs md:text-xs lg:text-2xs xl:text-lg lg:px-6 py-2 px-4 rounded-4xl text-white hover:bg-purple-900 cursor-pointer font-bold"
+          >
+            S'inscrire
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer
+      class="flex flex-col pl-10 justify-around items-start sd:pl-0 sd:flex-row sd:justify-around sd:items-center gap-5 py-10 bg-purple-800 sd:rounded-[60px] sd:rounded-bl-none sd:rounded-br-none"
+    >
+      <div>
+        <p class="font-bold">
+          <span class="text-[1.2em] text-white lg:text-2xl">HOME</span
+          ><span class="text-[1.2em] text-amber-400 lg:text-2xl">LOC</span>
+        </p>
+      </div>
+      <div>
+        <p class="text-base text-white pb-3 lg:text-[25px] lg:pb-5">
+          Informations
+        </p>
         <ul class="text-[12px] lg:text-[18px] text-amber-400">
-            <li>Conditions de vente</li>
-            <li>Mentions légales</li>
-            <li>Support</li>
-            <li>Nous conctater</li>
+          <li>Conditions de vente</li>
+          <li>Mentions légales</li>
+          <li>Support</li>
+          <li>Nous conctater</li>
         </ul>
-    </div>
-    <div class="information">
-        <p class="text-base text-white pb-2 lg:text-[25px] lg:pb-5">Nos locaux</p>
+      </div>
+      <div class="information">
+        <p class="text-base text-white pb-2 lg:text-[25px] lg:pb-5">
+          Nos locaux
+        </p>
         <ul class="text-[12px] lg:text-[18px] text-amber-400">
-            <li>France</li>
-            <li>Algérie</li>
-            <li>Espagne</li>
-            <li>Italie</li>
-            <li>Canada</li>
+          <li>France</li>
+          <li>Algérie</li>
+          <li>Espagne</li>
+          <li>Italie</li>
+          <li>Canada</li>
         </ul>
-    </div>
-    <div class="">
-        <p class="text-base  text-white pb-3 lg:text-[25px] lg:pb-5">Contact</p>
-        <p class="text-[12px] lg:text-[18px] text-amber-400">+0 00 00 00 00 </p>
-        <p class="text-[12px] lg:text-[18px] text-amber-400 pb-2">homeloc@gmail.com</p>
+      </div>
+      <div class="">
+        <p class="text-base text-white pb-3 lg:text-[25px] lg:pb-5">Contact</p>
+        <p class="text-[12px] lg:text-[18px] text-amber-400">+0 00 00 00 00</p>
+        <p class="text-[12px] lg:text-[18px] text-amber-400 pb-2">
+          homeloc@gmail.com
+        </p>
         <ul class="flex">
-            <li><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512">
-                    <path fill="orange"
-                        d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z" />
-                </svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" viewBox="0 0 24 24">
-                    <path
-                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                </svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" viewBox="0 0 24 24">
-                    <path
-                        d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z" />
-                </svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" viewBox="0 0 24 24">
-                    <path
-                        d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z" />
-                </svg></li>
-        
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="20"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="orange"
+                d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="orange"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="orange"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="orange"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+              />
+            </svg>
+          </li>
         </ul>
-        
+      </div>
+    </footer>
+    <div class="text-center font-bold p-2.5 text-[10px] lg:text[20px]">
+      <p>&copy;2025 - evarosto - Tous droits réservés</p>
     </div>
-</footer>
-<div class="text-center font-bold p-2.5 text-[10px] lg:text[20px]">
-    <P>&copy;2025 - evarosto - Tous droits réservés</P>
-</div>
-</body>
+  </body>
 </html>
-
-
-
-
-
-    
-    
-    
-    
-
-
