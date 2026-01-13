@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en" style="scroll-behavior: smooth; overflow-x: hidden;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeLoc</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Head  -->
@@ -18,7 +19,7 @@
           >LOC</span
         >
       </p>
-      <nav>
+      <nav class="hidden sd:inline-block">
         <ul
           class="flex gap-px items-center text-[9px] md:text-[12px] md:gap-4 lg:text-base lg:gap-6 xl:gap-6 xl:text-base"
         >
@@ -52,26 +53,63 @@
           </li>
         </ul>
       </nav>
-      <button class="bg-purple-900">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24"
-          viewBox="0 96 960 960"
-          width="24"
-          class="h-6 w-6 md:h-10 md:w-10 xl:h-12 xl:w-12"
-        >
-          <path
-            fill="white"
-            d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"
-          />
-        </svg>
-      </button>
+      <div class="flex items-center justify-center gap-5 ">
+        <button id="menu-toggle" class=" text-white text-lg bg-purple-900 p-1 cursor-pointer rounded-lg  sd:hidden"><i class="fa-solid fa-bars"></i></button>
+        <button class="bg-purple-900 rounded-lg cursor-pointer">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 96 960 960"
+            width="30"
+            class="h-9 w-7.7 md:h-10 md:w-10 xl:h-12 xl:w-12"
+            >
+            <path
+                fill="white"
+                d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"
+            />
+            </svg>
+        </button>
+    </div>
     </header>
 
-    <main class="px-6">
-      <!-- HOME  -->
+    <!-- HOME  -->
+    <div class="fixed -left-150 duration-400 z-20 top-19 h-150 w-screen flex items-start justify-start pl-10 pt-20 sm:hidden" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: whitesmoke  " id="menu">
+        <ul
+        class="flex flex-col gap-10 justify-center items-center text-base font-bold "
+        >
+          <li class="bg-white px-2 py-1 rounded-3xl border-2 border-purple-800 hover:bg-purple-800">
+            <a
+              href="#"
+              class="text-purple-800 p-2 font-bold hover:text-white"
+              >Home</a
+            >
+          </li>
+          <li class="bg-white px-2 py-1 rounded-3xl border-2 border-purple-800 hover:bg-purple-800">
+            <a
+              href="#about"
+              class="text-purple-800 p-2 font-bold hover:text-white "
+              >À propos</a
+            >
+          </li>
+          <li class="bg-white px-2 py-1 rounded-3xl border-2 border-purple-800 hover:bg-purple-800">
+            <a
+              href="#service"
+              class="text-purple-800 p-2 font-bold  hover:text-white"
+              >Services</a
+            >
+          </li>
+          <li class="bg-white px-2 py-1 rounded-3xl border-2 border-purple-800 hover:bg-purple-800">
+            <a
+              href="#location"
+              class="text-purple-800 p-2 font-bold  hover:text-white "
+              >Locations</a
+            >
+          </li>
+        </ul> 
+       </div>
+       <main class="px-6">
       <section
-        class="h-80 p-4 rounded-xl mt-5 md:p-10 md:h-100 xl:h-120 lg:mx-8 lg:h-110 lg:p-15"
+      class="h-80 p-4 rounded-xl mt-5 md:p-10 md:h-100 xl:h-120 lg:mx-8 lg:h-110 lg:p-15"
         style="background: url(./img-Homeloc/home.jpg) center/cover"
       >
         <div
@@ -628,7 +666,7 @@
           />
           <button
             title="S'inscrire"
-            class="bg-purple-800 text-[8px] sd:text-xs md:text-xs lg:text-2xs xl:text-lg lg:px-6 py-2 px-4 rounded-4xl text-white hover:bg-purple-900 cursor-pointer font-bold"
+            class="bg-purple-800 text-sm sd:text-xs md:text-xs lg:text-2xs xl:text-lg lg:px-6 py-2 px-4 rounded-4xl text-white hover:bg-purple-900 cursor-pointer font-bold"
           >
             S'inscrire
           </button>
@@ -732,5 +770,6 @@
     <div class="text-center font-bold p-2.5 text-[10px] lg:text[20px]">
       <p>&copy;2025 - evarosto - Tous droits réservés</p>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
